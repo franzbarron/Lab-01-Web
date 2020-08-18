@@ -1,0 +1,54 @@
+/* Make background dark and font white if the user prefers dark theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #303742;
+    color: #ffffff;
+  }
+}
+
+/* Add a some left and rigt margin in wide screes (i.e. desktop) because I feel
+    that looks better */
+@media (min-width: 576px) {
+  body {
+    margin: 0.5em 20% 0.5em 20%;
+  }
+}
+
+/* Add a little margin to smaller screens because that still looks a little better */
+@media (max-width: 575px) {
+  body {
+    margin: 0.5em 1em 0.5em 1em;
+  }
+}
+
+/* Change to a nicer font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Remove gaps in links underline in iOS 8+ and Safari 8+ (taken from spectre.css)
+    Make links a nicer color and for it to stay the same */
+a {
+  -webkit-text-decoration-skip: objects;
+  color: #0984e3;
+}
+
+/* Remove the outline on focused links when they are also active or hovered in
+    all browsers (taken from spectre.css)*/
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+header {
+  text-align: center;
+}
+
+/* Show horizontal line as divider */
+.divider {
+  display: block;
+  position: relative;
+  border-top: 0.05rem solid #f1f3f550;
+  height: 0.05rem;
+  margin: 0.4rem 0;
+}

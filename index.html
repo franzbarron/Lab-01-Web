@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francisco Barr&oacute;n | Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#projects">Major Projects</a>
+      <a href="#technical-skill">Technical Skills</a>
+      <a href="#social-impact">Social Impact</a>
+    </nav>
+    <header>
+      <h1>Juan Francisco Barr&oacute;n Camacho</h1>
+      <address id="contact-info">
+        <span id="email"></span><br />
+        <span id="phone-number"></span>
+      </address>
+    </header>
+    <main>
+      <section id="education">
+        <h2>Education</h2>
+        <p>
+          Tecnológico de Monterrey, Campus Monterrey<br />
+          Ing. Tecnologías Computacionales (B.S. Computer Science and
+          Technology)<br />
+          Graduating in May 2022<br />
+          Cumulative GPA: 80 / 100
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Major Projects</h2>
+        <h3>Weather and Air Quality <span class="date">August 2020</span></h3>
+        <ul>
+          <li>
+            Developed a web application that allows the user to know the current
+            weather conditions and air quality of a given location.
+          </li>
+          <li>
+            Built a basic node server to make the connections to the APIs used
+            to get the data and avoid publishing API keys.
+          </li>
+          <li>
+            Application available on
+            <a href="https://franzbarron.dev/weather"
+              >https://franzbarron.dev/weather</a
+            >
+          </li>
+        </ul>
+        <h3>Hangman Game <span class="date">August 2018</span></h3>
+        Designed and developed a web version of the classic Hangman game. Made
+        in JavaScript using p5.js to draw on canvas element. Available on
+        <a href="https://franzbarron.dev/hangman/hangman.html"
+          >https://franzbarron.dev/hangman/hangman.html</a
+        >
+        <h3>Baja definitiva <span class="date">Fall 2017</span></h3>
+        Designed and developed a platform game in GameMaker with a team of 4,
+        which was selected as one of the 10 best out of 30 in the Introduction
+        to Computer Science and Technology course. Responsible for level design.
+        Available to download on
+        <a href="https://boy-from-mars.itch.io/baja-definitiva."
+          >https://boy-from-mars.itch.io/baja-definitiva.</a
+        >
+      </section>
+      <section id="technical-skill">
+        <h2>Technical Skills</h2>
+        <h3>Languages</h3>
+        <ul>
+          <li>TypeScript - 3 month</li>
+          <li>JavsScript - 2 year</li>
+          <li>C++ - 2 years</li>
+          <li>HTML - 2 years</li>
+        </ul>
+        <h3>Frameworks and Other Tools</h3>
+        <li>Git - 1 year</li>
+        <li>node.js - 1 year</li>
+        <li>Express - 1 year</li>
+      </section>
+      <section id="social-impact">
+        <h2>Social Impact</h2>
+        <h3>WIT Code <span class="date">February 2020&ndash;May 2020</span></h3>
+        Mentored a middle school student in different areas of programming such
+        as the basics of web development, videogame design and database design
+        and management.
+        <h3>
+          Programando un México Mejor
+          <span class="date">August 2018&ndash;November 2018</span>
+        </h3>
+        Taught high school students about Information Technologies and their
+        impact in their daily lives. Shared web development knowledge,
+        especially regarding HTML, CSS and JS.
+      </section>
+    </main>
+    <div class="divider"></div>
+    <footer>
+      &copy; 2020 Francisco Barr&oacute;n
+    </footer>
+    <script>
+      // I don't wanna risk my contact info going public just like that because
+      // I fear spammers, and I read somewhere this is a way to avoid that
+
+      // populate email address
+      const local =
+        '&#102;&#114;&#97;&#110;&#122;&#46;&#98;&#97;&#114;&#114;&#111;&#110;';
+      const domain =
+        '&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;';
+      document.querySelector('#email').innerHTML = local + '&#64;' + domain;
+
+      // populate phone number
+      document.querySelector('#phone-number').innerHTML =
+        '&#43;&#53;&#50;&#32;&#49;&#32;&#56;&#49;&#32;&#56;&#48;&#53;&#48;&#32;&#56;&#56;&#56;&#55;';
+    </script>
+  </body>
+</html>
